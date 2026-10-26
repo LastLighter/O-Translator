@@ -1,0 +1,111 @@
+/* ------------------------------------------------------------------ modes */
+QFrame#ModeTabs {
+    background: rgba(255,255,255,.025);
+    border: 1px solid rgba(255,255,255,.075);
+    border-radius: 10px;
+}
+QPushButton#ModeTab {
+    background: transparent;
+    border: 0;
+    border-radius: 7px;
+    color: #858894;
+    padding: 7px 4px;
+    font-size: 10px;
+}
+QPushButton#ModeTab:hover { color: #dedbd4; }
+QPushButton#ModeTab:checked {
+    background: rgba(255,107,94,.14);
+    color: #ffb1a9;
+    font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- monitor */
+QFrame#MonitorCard {
+    background: #13151c;
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 15px;
+}
+QLabel#MonitorStatus {
+    color: #75e6d3;
+    font-size: 10px;
+    padding: 6px 8px;
+    background: rgba(117,230,211,.055);
+    border: 1px solid rgba(117,230,211,.10);
+    border-radius: 8px;
+}
+QLabel#MonitorStatus[tone="paused"] {
+    color: #f4b95f;
+    background: rgba(244,185,95,.07);
+    border-color: rgba(244,185,95,.14);
+}
+QLabel#MonitorStatus[tone="error"] {
+    color: #ff7d86;
+    background: rgba(255,125,134,.07);
+    border-color: rgba(255,125,134,.14);
+}
+QLabel#MonitorCoords {
+    color: #666a75;
+    font-family: "Cascadia Code", Consolas;
+    font-size: 8px;
+    padding: 2px 0;
+}
+QPushButton#MonitorButton {
+    background: rgba(255,255,255,.04);
+    color: #bcbab5;
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 7px;
+    padding: 6px 9px;
+    font-size: 9px;
+}
+QPushButton#MonitorButton:hover { background: rgba(255,255,255,.075); color: #efece5; }
+QPushButton#MonitorButton:disabled { color: #4e5058; }
+QPushButton#MonitorButtonPrimary {
+    background: rgba(255,107,94,.14);
+    color: #ffb1a9;
+    border: 1px solid rgba(255,107,94,.24);
+    border-radius: 7px;
+    padding: 6px 9px;
+    font-size: 9px;
+    font-weight: 600;
+}
+QPushButton#MonitorButtonPrimary:hover { background: rgba(255,107,94,.22); }
+QKeySequenceEdit {
+    background: rgba(255,255,255,.032);
+    border: 1px solid rgba(255,255,255,.085);
+    border-radius: 8px;
+    padding: 5px 8px;
+    color: #d7d4cd;
+    font-family: "Cascadia Code", Consolas;
+    font-size: 9px;
+}
+QLabel#RangeOutput {
+    color: #a6a5a0;
+    font-family: "Cascadia Code", Consolas;
+    font-size: 8px;
+}
+
+/* ---------------------------------------------------------------- floating */
+QFrame#FloatingFrame {
+    background: #101218;
+    border: 1px solid rgba(96, 165, 250, .55);
+    border-radius: 12px;
+}
+QLabel#FloatingImage {
+    background: #0b0c10;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* ------------------------------------------------- aligned overlay (exact) */
+/* When the HUD covers a captured region it must be a true pixel overlay: no
+   frame, no rounded corners, no dark letterbox around the image. The blue glow
+   is painted by the window itself, outside this content area. */
+QFrame#FloatingFrame[aligned="true"] {
+    background: transparent;
+    border: 0px;
+    border-radius: 0px;
+}
+QLabel#FloatingImage[aligned="true"] {
+    background: transparent;
+    border-radius: 0px;
+}

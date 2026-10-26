@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "o-translator"
+version = "0.1.0"
+description = "Multi-scenario screenshot OCR, inpainting, translation, and typesetting pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "O-Translator contributors" }]
+dependencies = [
+    "fastapi>=0.115,<1.0",
+    "uvicorn[standard]>=0.30,<1.0",
+    "python-multipart>=0.0.9",
+    "pydantic>=2.8,<3.0",
+    "pydantic-settings>=2.4,<3.0",
+    "Pillow>=10.4",
+    "numpy>=1.26",
+    "opencv-python-headless>=4.10",
+    "httpx>=0.27,<1.0",
+]
+
+[project.optional-dependencies]
+ocr = ["rapidocr>=3.10,<4.0", "onnxruntime>=1.18"]
+inpaint = ["onnxruntime>=1.18"]
+gpu = ["onnxruntime-gpu>=1.18"]
+optimize = ["onnxsim>=0.4", "onnxconverter-common>=1.16"]
+desktop = ["PySide6>=6.7", "mss>=10.0"]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.24", "ruff>=0.6"]
+
+[project.scripts]
+o-translator-server = "backend.main:run"
+o-translator-desktop = "client.main:main"
+
+[tool.setuptools.packages.find]
+include = ["backend*", "core_pipeline*", "client*"]
+
+[tool.setuptools.package-data]
+client = [
+    "web/*.html",
+    "web/*.css",
+    "web/*.js",
+    "web/assets/*.png",
+    "web/assets/*.svg",
+    "ui/*.qss",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "integration: tests that load real OCR/model dependencies",
+]
+asyncio_mode = "auto"

@@ -1,0 +1,1375 @@
+[
+  {
+    "path": "requirements.txt",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T18:42:20.959Z",
+    "recoveredLines": 33,
+    "latestKnownLines": 33,
+    "newerLinesMissing": 0,
+    "bytes": 1214
+  },
+  {
+    "path": "pyproject.toml",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T18:40:44.698Z",
+    "recoveredLines": 56,
+    "latestKnownLines": 56,
+    "newerLinesMissing": 0,
+    "bytes": 1447
+  },
+  {
+    "path": "README.md",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T04:08:03.107Z",
+    "recoveredLines": 406,
+    "latestKnownLines": 670,
+    "newerLinesMissing": 264,
+    "bytes": 17954
+  },
+  {
+    "path": "backend\\config.py",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T11:01:25.500Z",
+    "recoveredLines": 352,
+    "latestKnownLines": 429,
+    "newerLinesMissing": 77,
+    "bytes": 13362
+  },
+  {
+    "path": "core_pipeline\\ocr.py",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-19T09:31:46.027Z",
+    "recoveredLines": 2358,
+    "latestKnownLines": 2811,
+    "newerLinesMissing": 453,
+    "bytes": 89572
+  },
+  {
+    "path": "core_pipeline\\runtime.py",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T11:01:30.570Z",
+    "recoveredLines": 350,
+    "latestKnownLines": 423,
+    "newerLinesMissing": 73,
+    "bytes": 12404
+  },
+  {
+    "path": "core_pipeline\\model_store.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T18:39:56.896Z",
+    "recoveredLines": 316,
+    "latestKnownLines": 316,
+    "newerLinesMissing": 0,
+    "bytes": 11078
+  },
+  {
+    "path": "backend\\main.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:07:09.246Z",
+    "recoveredLines": 332,
+    "latestKnownLines": 332,
+    "newerLinesMissing": 0,
+    "bytes": 12241
+  },
+  {
+    "path": "backend\\api.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:07:09.258Z",
+    "recoveredLines": 296,
+    "latestKnownLines": 296,
+    "newerLinesMissing": 0,
+    "bytes": 10455
+  },
+  {
+    "path": "core_pipeline\\pipeline.py",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-20T08:54:48.034Z",
+    "recoveredLines": 456,
+    "latestKnownLines": 458,
+    "newerLinesMissing": 2,
+    "bytes": 17785
+  },
+  {
+    "path": "tests\\test_ocr.py",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T11:07:11.982Z",
+    "recoveredLines": 418,
+    "latestKnownLines": 1147,
+    "newerLinesMissing": 729,
+    "bytes": 13398
+  },
+  {
+    "path": ".env.example",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:07:11.984Z",
+    "recoveredLines": 122,
+    "latestKnownLines": 122,
+    "newerLinesMissing": 0,
+    "bytes": 5626
+  },
+  {
+    "path": "tests\\test_integration_ocr.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T12:01:23.231Z",
+    "recoveredLines": 77,
+    "latestKnownLines": 77,
+    "newerLinesMissing": 0,
+    "bytes": 2328
+  },
+  {
+    "path": ".gitignore",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T18:42:20.956Z",
+    "recoveredLines": 46,
+    "latestKnownLines": 46,
+    "newerLinesMissing": 0,
+    "bytes": 579
+  },
+  {
+    "path": "scripts\\download_models.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:11:50.642Z",
+    "recoveredLines": 215,
+    "latestKnownLines": 215,
+    "newerLinesMissing": 0,
+    "bytes": 8018
+  },
+  {
+    "path": "O-Translator.spec",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T08:03:55.501Z",
+    "recoveredLines": 215,
+    "latestKnownLines": 215,
+    "newerLinesMissing": 0,
+    "bytes": 6677
+  },
+  {
+    "path": "launcher.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T09:05:23.084Z",
+    "recoveredLines": 141,
+    "latestKnownLines": 141,
+    "newerLinesMissing": 0,
+    "bytes": 4259
+  },
+  {
+    "path": "scripts\\build_windows_exe.ps1",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T09:05:03.121Z",
+    "recoveredLines": 133,
+    "latestKnownLines": 133,
+    "newerLinesMissing": 0,
+    "bytes": 5665
+  },
+  {
+    "path": "scripts\\setup_gpu_runtime.ps1",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T07:26:14.054Z",
+    "recoveredLines": 51,
+    "latestKnownLines": 51,
+    "newerLinesMissing": 0,
+    "bytes": 1856
+  },
+  {
+    "path": "scripts\\benchmark_pipeline.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:14:08.221Z",
+    "recoveredLines": 139,
+    "latestKnownLines": 139,
+    "newerLinesMissing": 0,
+    "bytes": 4841
+  },
+  {
+    "path": "scripts\\verify_gpu.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:14:08.223Z",
+    "recoveredLines": 117,
+    "latestKnownLines": 117,
+    "newerLinesMissing": 0,
+    "bytes": 4284
+  },
+  {
+    "path": "scripts\\build_gpu_runtime.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T18:39:34.702Z",
+    "recoveredLines": 149,
+    "latestKnownLines": 149,
+    "newerLinesMissing": 0,
+    "bytes": 5668
+  },
+  {
+    "path": "requirements-desktop.txt",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:44:55.853Z",
+    "recoveredLines": 10,
+    "latestKnownLines": 10,
+    "newerLinesMissing": 0,
+    "bytes": 189
+  },
+  {
+    "path": "core_pipeline\\types.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T08:54:51.162Z",
+    "recoveredLines": 251,
+    "latestKnownLines": 251,
+    "newerLinesMissing": 0,
+    "bytes": 8273
+  },
+  {
+    "path": "tests\\test_api.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:14:45.340Z",
+    "recoveredLines": 183,
+    "latestKnownLines": 183,
+    "newerLinesMissing": 0,
+    "bytes": 6100
+  },
+  {
+    "path": "tests\\test_config.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:14:45.341Z",
+    "recoveredLines": 72,
+    "latestKnownLines": 72,
+    "newerLinesMissing": 0,
+    "bytes": 2698
+  },
+  {
+    "path": "tests\\conftest.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:30:55.283Z",
+    "recoveredLines": 69,
+    "latestKnownLines": 69,
+    "newerLinesMissing": 0,
+    "bytes": 1885
+  },
+  {
+    "path": "packaging\\README-Windows.txt",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T20:10:40.574Z",
+    "recoveredLines": 120,
+    "latestKnownLines": 132,
+    "newerLinesMissing": 12,
+    "bytes": 6659
+  },
+  {
+    "path": "client\\web\\app.js",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-17T18:27:51.508Z",
+    "recoveredLines": 708,
+    "latestKnownLines": 744,
+    "newerLinesMissing": 36,
+    "bytes": 23659
+  },
+  {
+    "path": "tests\\test_runtime.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:24:22.508Z",
+    "recoveredLines": 104,
+    "latestKnownLines": 104,
+    "newerLinesMissing": 0,
+    "bytes": 3668
+  },
+  {
+    "path": "docs\\API.md",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T06:20:41.995Z",
+    "recoveredLines": 208,
+    "latestKnownLines": 256,
+    "newerLinesMissing": 48,
+    "bytes": 5732
+  },
+  {
+    "path": "docs\\ARCHITECTURE.md",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T05:50:46.306Z",
+    "recoveredLines": 265,
+    "latestKnownLines": 425,
+    "newerLinesMissing": 160,
+    "bytes": 12853
+  },
+  {
+    "path": "docs\\DESKTOP.md",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T19:58:11.414Z",
+    "recoveredLines": 353,
+    "latestKnownLines": 397,
+    "newerLinesMissing": 44,
+    "bytes": 17423
+  },
+  {
+    "path": "docs\\PERFORMANCE.md",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T05:50:15.825Z",
+    "recoveredLines": 252,
+    "latestKnownLines": 416,
+    "newerLinesMissing": 164,
+    "bytes": 19889
+  },
+  {
+    "path": "models\\README.md",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:26:16.208Z",
+    "recoveredLines": 195,
+    "latestKnownLines": 195,
+    "newerLinesMissing": 0,
+    "bytes": 7718
+  },
+  {
+    "path": "scripts\\smoke_test_exe.ps1",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:56:53.515Z",
+    "recoveredLines": 116,
+    "latestKnownLines": 116,
+    "newerLinesMissing": 0,
+    "bytes": 5036
+  },
+  {
+    "path": "tests\\test_client_ui.py",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T19:57:44.343Z",
+    "recoveredLines": 343,
+    "latestKnownLines": 554,
+    "newerLinesMissing": 211,
+    "bytes": 11132
+  },
+  {
+    "path": "client\\web\\index.html",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:26:56.032Z",
+    "recoveredLines": 262,
+    "latestKnownLines": 262,
+    "newerLinesMissing": 0,
+    "bytes": 12121
+  },
+  {
+    "path": "client\\main.py",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-19T08:03:39.462Z",
+    "recoveredLines": 1883,
+    "latestKnownLines": 1928,
+    "newerLinesMissing": 45,
+    "bytes": 76580
+  },
+  {
+    "path": "core_pipeline\\errors.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:23:12.938Z",
+    "recoveredLines": 97,
+    "latestKnownLines": 97,
+    "newerLinesMissing": 0,
+    "bytes": 2073
+  },
+  {
+    "path": "core_pipeline\\__init__.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:23:12.952Z",
+    "recoveredLines": 26,
+    "latestKnownLines": 26,
+    "newerLinesMissing": 0,
+    "bytes": 430
+  },
+  {
+    "path": "backend\\__init__.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:23:12.966Z",
+    "recoveredLines": 4,
+    "latestKnownLines": 4,
+    "newerLinesMissing": 0,
+    "bytes": 59
+  },
+  {
+    "path": "core_pipeline\\image_utils.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:23:21.035Z",
+    "recoveredLines": 139,
+    "latestKnownLines": 139,
+    "newerLinesMissing": 0,
+    "bytes": 4798
+  },
+  {
+    "path": "core_pipeline\\mask.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T08:55:28.424Z",
+    "recoveredLines": 223,
+    "latestKnownLines": 223,
+    "newerLinesMissing": 0,
+    "bytes": 8745
+  },
+  {
+    "path": "core_pipeline\\inpainting.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T08:55:28.431Z",
+    "recoveredLines": 1093,
+    "latestKnownLines": 1093,
+    "newerLinesMissing": 0,
+    "bytes": 40514
+  },
+  {
+    "path": "core_pipeline\\translation.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T08:33:01.883Z",
+    "recoveredLines": 765,
+    "latestKnownLines": 765,
+    "newerLinesMissing": 0,
+    "bytes": 29510
+  },
+  {
+    "path": "core_pipeline\\typesetting.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T08:54:44.893Z",
+    "recoveredLines": 1073,
+    "latestKnownLines": 1073,
+    "newerLinesMissing": 0,
+    "bytes": 39409
+  },
+  {
+    "path": "backend\\artifacts.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T06:23:17.889Z",
+    "recoveredLines": 158,
+    "latestKnownLines": 158,
+    "newerLinesMissing": 0,
+    "bytes": 5792
+  },
+  {
+    "path": "backend\\jobs.py",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-18T05:49:51.272Z",
+    "recoveredLines": 294,
+    "latestKnownLines": 330,
+    "newerLinesMissing": 36,
+    "bytes": 9776
+  },
+  {
+    "path": "client\\web\\styles.css",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:27:24.277Z",
+    "recoveredLines": 926,
+    "latestKnownLines": 926,
+    "newerLinesMissing": 0,
+    "bytes": 30225
+  },
+  {
+    "path": "scripts\\make_demo_assets.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:28:14.171Z",
+    "recoveredLines": 290,
+    "latestKnownLines": 290,
+    "newerLinesMissing": 0,
+    "bytes": 12444
+  },
+  {
+    "path": "client\\web\\assets\\favicon.svg",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:28:23.919Z",
+    "recoveredLines": 17,
+    "latestKnownLines": 17,
+    "newerLinesMissing": 0,
+    "bytes": 772
+  },
+  {
+    "path": "client\\desktop.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T19:09:02.633Z",
+    "recoveredLines": 1776,
+    "latestKnownLines": 1776,
+    "newerLinesMissing": 0,
+    "bytes": 68759
+  },
+  {
+    "path": "client\\__init__.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:29:57.722Z",
+    "recoveredLines": 2,
+    "latestKnownLines": 2,
+    "newerLinesMissing": 0,
+    "bytes": 35
+  },
+  {
+    "path": "tests\\test_mask.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T09:00:18.743Z",
+    "recoveredLines": 71,
+    "latestKnownLines": 71,
+    "newerLinesMissing": 0,
+    "bytes": 2148
+  },
+  {
+    "path": "tests\\test_typesetting.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T08:54:56.509Z",
+    "recoveredLines": 337,
+    "latestKnownLines": 337,
+    "newerLinesMissing": 0,
+    "bytes": 10902
+  },
+  {
+    "path": "tests\\test_translation.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T06:23:21.258Z",
+    "recoveredLines": 209,
+    "latestKnownLines": 209,
+    "newerLinesMissing": 0,
+    "bytes": 7697
+  },
+  {
+    "path": "tests\\test_pipeline.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T08:54:56.520Z",
+    "recoveredLines": 348,
+    "latestKnownLines": 348,
+    "newerLinesMissing": 0,
+    "bytes": 11532
+  },
+  {
+    "path": "ruff.toml",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:34:06.020Z",
+    "recoveredLines": 13,
+    "latestKnownLines": 13,
+    "newerLinesMissing": 0,
+    "bytes": 339
+  },
+  {
+    "path": "scripts\\run_server.ps1",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:35:43.718Z",
+    "recoveredLines": 8,
+    "latestKnownLines": 8,
+    "newerLinesMissing": 0,
+    "bytes": 272
+  },
+  {
+    "path": "scripts\\run_desktop.ps1",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:35:43.727Z",
+    "recoveredLines": 8,
+    "latestKnownLines": 8,
+    "newerLinesMissing": 0,
+    "bytes": 260
+  },
+  {
+    "path": "tests\\test_inpainting.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T05:49:59.128Z",
+    "recoveredLines": 109,
+    "latestKnownLines": 109,
+    "newerLinesMissing": 0,
+    "bytes": 3873
+  },
+  {
+    "path": "LICENSE",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:37:42.912Z",
+    "recoveredLines": 22,
+    "latestKnownLines": 22,
+    "newerLinesMissing": 0,
+    "bytes": 1082
+  },
+  {
+    "path": "examples\\README.md",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T18:37:42.919Z",
+    "recoveredLines": 23,
+    "latestKnownLines": 23,
+    "newerLinesMissing": 0,
+    "bytes": 733
+  },
+  {
+    "path": "client\\config.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T08:05:57.347Z",
+    "recoveredLines": 62,
+    "latestKnownLines": 62,
+    "newerLinesMissing": 0,
+    "bytes": 1789
+  },
+  {
+    "path": "client\\services\\api_client.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T19:57:40.542Z",
+    "recoveredLines": 248,
+    "latestKnownLines": 248,
+    "newerLinesMissing": 0,
+    "bytes": 8251
+  },
+  {
+    "path": "client\\services\\hotkey.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T19:11:13.375Z",
+    "recoveredLines": 103,
+    "latestKnownLines": 103,
+    "newerLinesMissing": 0,
+    "bytes": 3421
+  },
+  {
+    "path": "client\\services\\__init__.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T19:11:13.385Z",
+    "recoveredLines": 20,
+    "latestKnownLines": 20,
+    "newerLinesMissing": 0,
+    "bytes": 333
+  },
+  {
+    "path": "client\\services\\screen_capture.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T19:57:25.752Z",
+    "recoveredLines": 436,
+    "latestKnownLines": 436,
+    "newerLinesMissing": 0,
+    "bytes": 14897
+  },
+  {
+    "path": "client\\services\\region_monitor.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T00:57:31.029Z",
+    "recoveredLines": 423,
+    "latestKnownLines": 423,
+    "newerLinesMissing": 0,
+    "bytes": 15750
+  },
+  {
+    "path": "client\\ui\\extra.qss",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T04:04:33.542Z",
+    "recoveredLines": 156,
+    "latestKnownLines": 156,
+    "newerLinesMissing": 0,
+    "bytes": 4308
+  },
+  {
+    "path": "client\\ui\\styles.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T04:05:58.240Z",
+    "recoveredLines": 26,
+    "latestKnownLines": 26,
+    "newerLinesMissing": 0,
+    "bytes": 718
+  },
+  {
+    "path": "client\\ui\\__init__.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T19:12:15.372Z",
+    "recoveredLines": 6,
+    "latestKnownLines": 6,
+    "newerLinesMissing": 0,
+    "bytes": 91
+  },
+  {
+    "path": "client\\ui\\widgets.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T19:57:45.760Z",
+    "recoveredLines": 135,
+    "latestKnownLines": 135,
+    "newerLinesMissing": 0,
+    "bytes": 4394
+  },
+  {
+    "path": "client\\ui\\overlay_snipper.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:12:05.480Z",
+    "recoveredLines": 1449,
+    "latestKnownLines": 1449,
+    "newerLinesMissing": 0,
+    "bytes": 53234
+  },
+  {
+    "path": "client\\ui\\floating_window.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T04:04:25.090Z",
+    "recoveredLines": 594,
+    "latestKnownLines": 594,
+    "newerLinesMissing": 0,
+    "bytes": 24048
+  },
+  {
+    "path": "client\\__main__.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T19:15:25.125Z",
+    "recoveredLines": 9,
+    "latestKnownLines": 9,
+    "newerLinesMissing": 0,
+    "bytes": 185
+  },
+  {
+    "path": "tests\\test_screen_mapping.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:44:58.584Z",
+    "recoveredLines": 146,
+    "latestKnownLines": 146,
+    "newerLinesMissing": 0,
+    "bytes": 4374
+  },
+  {
+    "path": "tests\\test_region_monitor.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T19:16:10.649Z",
+    "recoveredLines": 121,
+    "latestKnownLines": 121,
+    "newerLinesMissing": 0,
+    "bytes": 3537
+  },
+  {
+    "path": "scripts\\package_zip.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T18:42:19.705Z",
+    "recoveredLines": 79,
+    "latestKnownLines": 79,
+    "newerLinesMissing": 0,
+    "bytes": 2821
+  },
+  {
+    "path": "client\\services\\ui_target.py",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-19T09:10:54.006Z",
+    "recoveredLines": 254,
+    "latestKnownLines": 263,
+    "newerLinesMissing": 9,
+    "bytes": 7370
+  },
+  {
+    "path": "client\\services\\target_detector.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:10:54.013Z",
+    "recoveredLines": 364,
+    "latestKnownLines": 364,
+    "newerLinesMissing": 0,
+    "bytes": 12702
+  },
+  {
+    "path": "client\\services\\win32_targets.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:10:56.664Z",
+    "recoveredLines": 500,
+    "latestKnownLines": 500,
+    "newerLinesMissing": 0,
+    "bytes": 16245
+  },
+  {
+    "path": "client\\services\\uia_targets.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:49:39.540Z",
+    "recoveredLines": 469,
+    "latestKnownLines": 469,
+    "newerLinesMissing": 0,
+    "bytes": 14350
+  },
+  {
+    "path": "tests\\test_ui_targets.py",
+    "status": "complete-but-outdated",
+    "recoveredVersion": "2026-10-19T09:11:04.039Z",
+    "recoveredLines": 117,
+    "latestKnownLines": 143,
+    "newerLinesMissing": 26,
+    "bytes": 4135
+  },
+  {
+    "path": "build\\_probe_uia_descent.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:47:02.000Z",
+    "recoveredLines": 143,
+    "latestKnownLines": 143,
+    "newerLinesMissing": 0,
+    "bytes": 4135
+  },
+  {
+    "path": "build\\_probe_overlay_initial.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:14:13.976Z",
+    "recoveredLines": 33,
+    "latestKnownLines": 33,
+    "newerLinesMissing": 0,
+    "bytes": 1261
+  },
+  {
+    "path": "build\\overlay-initial-result.json",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:14:15.441Z",
+    "recoveredLines": 60,
+    "latestKnownLines": 60,
+    "newerLinesMissing": 0,
+    "bytes": 826
+  },
+  {
+    "path": "build\\overlay-auto-result.json",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:14:15.442Z",
+    "recoveredLines": 63,
+    "latestKnownLines": 63,
+    "newerLinesMissing": 0,
+    "bytes": 877
+  },
+  {
+    "path": "build\\_probe_overlay_interaction2.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:14:20.204Z",
+    "recoveredLines": 78,
+    "latestKnownLines": 78,
+    "newerLinesMissing": 0,
+    "bytes": 3660
+  },
+  {
+    "path": "build\\overlay-interaction-result2.json",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:14:20.218Z",
+    "recoveredLines": 70,
+    "latestKnownLines": 70,
+    "newerLinesMissing": 0,
+    "bytes": 956
+  },
+  {
+    "path": "build\\_drive_packaged_overlay.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:15:44.487Z",
+    "recoveredLines": 47,
+    "latestKnownLines": 47,
+    "newerLinesMissing": 0,
+    "bytes": 1068
+  },
+  {
+    "path": "build\\_drive_packaged_overlay2.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:15:44.490Z",
+    "recoveredLines": 47,
+    "latestKnownLines": 47,
+    "newerLinesMissing": 0,
+    "bytes": 1183
+  },
+  {
+    "path": "scripts\\verify_dist.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T18:41:47.295Z",
+    "recoveredLines": 381,
+    "latestKnownLines": 381,
+    "newerLinesMissing": 0,
+    "bytes": 11566
+  },
+  {
+    "path": "build\\doctor-after-tray-startup.out",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T09:18:08.259Z",
+    "recoveredLines": 16,
+    "latestKnownLines": 16,
+    "newerLinesMissing": 0,
+    "bytes": 1223
+  },
+  {
+    "path": "build\\_probe_uia.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:46:06.524Z",
+    "recoveredLines": 120,
+    "latestKnownLines": 120,
+    "newerLinesMissing": 0,
+    "bytes": 4345
+  },
+  {
+    "path": "build\\_probe_uia_vtable.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:46:22.552Z",
+    "recoveredLines": 73,
+    "latestKnownLines": 73,
+    "newerLinesMissing": 0,
+    "bytes": 2150
+  },
+  {
+    "path": "build\\_probe_uia_tree.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:46:52.025Z",
+    "recoveredLines": 148,
+    "latestKnownLines": 148,
+    "newerLinesMissing": 0,
+    "bytes": 4403
+  },
+  {
+    "path": "build\\_probe_native_window.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:51:53.940Z",
+    "recoveredLines": 112,
+    "latestKnownLines": 112,
+    "newerLinesMissing": 0,
+    "bytes": 3780
+  },
+  {
+    "path": "build\\_probe_overlay.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:52:04.528Z",
+    "recoveredLines": 117,
+    "latestKnownLines": 117,
+    "newerLinesMissing": 0,
+    "bytes": 3370
+  },
+  {
+    "path": "build\\_probe_overlay_live.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:52:43.025Z",
+    "recoveredLines": 67,
+    "latestKnownLines": 67,
+    "newerLinesMissing": 0,
+    "bytes": 1822
+  },
+  {
+    "path": "build\\_probe_window_host.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:52:59.423Z",
+    "recoveredLines": 82,
+    "latestKnownLines": 82,
+    "newerLinesMissing": 0,
+    "bytes": 2578
+  },
+  {
+    "path": "build\\_probe_overlay_cross.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:53:03.280Z",
+    "recoveredLines": 66,
+    "latestKnownLines": 66,
+    "newerLinesMissing": 0,
+    "bytes": 1958
+  },
+  {
+    "path": "build\\_probe_click_capture.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:53:45.748Z",
+    "recoveredLines": 57,
+    "latestKnownLines": 57,
+    "newerLinesMissing": 0,
+    "bytes": 1618
+  },
+  {
+    "path": "build\\_test_frozen_overlay.ps1",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T12:04:41.123Z",
+    "recoveredLines": 40,
+    "latestKnownLines": 40,
+    "newerLinesMissing": 0,
+    "bytes": 1859
+  },
+  {
+    "path": "build\\overlay-cross-result.json",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:53:16.684Z",
+    "recoveredLines": 48,
+    "latestKnownLines": 48,
+    "newerLinesMissing": 0,
+    "bytes": 696
+  },
+  {
+    "path": "build\\window-capture-result.json",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T11:53:51.448Z",
+    "recoveredLines": 57,
+    "latestKnownLines": 57,
+    "newerLinesMissing": 0,
+    "bytes": 911
+  },
+  {
+    "path": "build\\_probe_floating_visual.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T04:07:08.581Z",
+    "recoveredLines": 105,
+    "latestKnownLines": 105,
+    "newerLinesMissing": 0,
+    "bytes": 3306
+  },
+  {
+    "path": "build\\_probe_floating_live.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T04:07:45.843Z",
+    "recoveredLines": 79,
+    "latestKnownLines": 79,
+    "newerLinesMissing": 0,
+    "bytes": 2394
+  },
+  {
+    "path": "client\\ui\\base.qss",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T04:04:33.538Z",
+    "recoveredLines": 247,
+    "latestKnownLines": 247,
+    "newerLinesMissing": 0,
+    "bytes": 6936
+  },
+  {
+    "path": "dist\\O-Translator-optimized\\OLD_BUILD_DO_NOT_SHIP.txt",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T04:05:25.042Z",
+    "recoveredLines": 5,
+    "latestKnownLines": 5,
+    "newerLinesMissing": 0,
+    "bytes": 238
+  },
+  {
+    "path": "dist\\O-Translator\\OLD_BUILD_DO_NOT_SHIP.txt",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T04:08:35.033Z",
+    "recoveredLines": 6,
+    "latestKnownLines": 6,
+    "newerLinesMissing": 0,
+    "bytes": 326
+  },
+  {
+    "path": "scripts\\repro_pipeline.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T00:58:48.603Z",
+    "recoveredLines": 152,
+    "latestKnownLines": 152,
+    "newerLinesMissing": 0,
+    "bytes": 5144
+  },
+  {
+    "path": "scripts\\ocr_probe.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T01:01:10.360Z",
+    "recoveredLines": 118,
+    "latestKnownLines": 118,
+    "newerLinesMissing": 0,
+    "bytes": 4039
+  },
+  {
+    "path": "scripts\\translate_probe.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T01:01:36.419Z",
+    "recoveredLines": 111,
+    "latestKnownLines": 111,
+    "newerLinesMissing": 0,
+    "bytes": 3643
+  },
+  {
+    "path": "scripts\\rec_probe.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T01:04:04.287Z",
+    "recoveredLines": 95,
+    "latestKnownLines": 95,
+    "newerLinesMissing": 0,
+    "bytes": 3125
+  },
+  {
+    "path": "scripts\\subtitle_probe.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T01:11:02.890Z",
+    "recoveredLines": 60,
+    "latestKnownLines": 60,
+    "newerLinesMissing": 0,
+    "bytes": 2008
+  },
+  {
+    "path": "scripts\\render_probe.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T01:39:23.776Z",
+    "recoveredLines": 93,
+    "latestKnownLines": 93,
+    "newerLinesMissing": 0,
+    "bytes": 2850
+  },
+  {
+    "path": "tests\\test_model_store.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T00:07:29.174Z",
+    "recoveredLines": 53,
+    "latestKnownLines": 53,
+    "newerLinesMissing": 0,
+    "bytes": 1628
+  },
+  {
+    "path": "build\\_smoke_tray_startup.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T08:05:38.049Z",
+    "recoveredLines": 47,
+    "latestKnownLines": 47,
+    "newerLinesMissing": 0,
+    "bytes": 1627
+  },
+  {
+    "path": "tests\\test_client_startup.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T08:06:14.676Z",
+    "recoveredLines": 45,
+    "latestKnownLines": 45,
+    "newerLinesMissing": 0,
+    "bytes": 1445
+  },
+  {
+    "path": "build\\_smoke_packaged_tray.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-19T08:11:29.646Z",
+    "recoveredLines": 106,
+    "latestKnownLines": 106,
+    "newerLinesMissing": 0,
+    "bytes": 3384
+  },
+  {
+    "path": "client\\services\\single_instance.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T20:01:44.942Z",
+    "recoveredLines": 223,
+    "latestKnownLines": 223,
+    "newerLinesMissing": 0,
+    "bytes": 8188
+  },
+  {
+    "path": "tests\\test_single_instance.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T20:03:53.382Z",
+    "recoveredLines": 64,
+    "latestKnownLines": 64,
+    "newerLinesMissing": 0,
+    "bytes": 1632
+  },
+  {
+    "path": "AGENTS.md",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T18:42:30.226Z",
+    "recoveredLines": 113,
+    "latestKnownLines": 113,
+    "newerLinesMissing": 0,
+    "bytes": 5765
+  },
+  {
+    "path": "tests\\test_progressive_pipeline.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T06:13:05.137Z",
+    "recoveredLines": 87,
+    "latestKnownLines": 87,
+    "newerLinesMissing": 0,
+    "bytes": 2585
+  },
+  {
+    "path": "build\\profile_ocr.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T04:08:43.691Z",
+    "recoveredLines": 83,
+    "latestKnownLines": 83,
+    "newerLinesMissing": 0,
+    "bytes": 2763
+  },
+  {
+    "path": "build\\profile_ocr_detail.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T04:10:50.691Z",
+    "recoveredLines": 86,
+    "latestKnownLines": 86,
+    "newerLinesMissing": 0,
+    "bytes": 2829
+  },
+  {
+    "path": "build\\bench_rec_batch.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T04:12:17.553Z",
+    "recoveredLines": 100,
+    "latestKnownLines": 100,
+    "newerLinesMissing": 0,
+    "bytes": 3241
+  },
+  {
+    "path": "build\\profile_refine.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T04:13:58.746Z",
+    "recoveredLines": 61,
+    "latestKnownLines": 61,
+    "newerLinesMissing": 0,
+    "bytes": 1697
+  },
+  {
+    "path": "build\\bench_render_jobs.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T04:17:40.822Z",
+    "recoveredLines": 81,
+    "latestKnownLines": 81,
+    "newerLinesMissing": 0,
+    "bytes": 2848
+  },
+  {
+    "path": "build\\compare_fit.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T04:17:51.629Z",
+    "recoveredLines": 176,
+    "latestKnownLines": 176,
+    "newerLinesMissing": 0,
+    "bytes": 5800
+  },
+  {
+    "path": "build\\bench_ocr_auto.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T04:24:28.283Z",
+    "recoveredLines": 67,
+    "latestKnownLines": 67,
+    "newerLinesMissing": 0,
+    "bytes": 2133
+  },
+  {
+    "path": "build\\bench_render_legacy.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T04:24:17.870Z",
+    "recoveredLines": 94,
+    "latestKnownLines": 94,
+    "newerLinesMissing": 0,
+    "bytes": 3197
+  },
+  {
+    "path": "build\\bench_refine.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T04:25:26.029Z",
+    "recoveredLines": 67,
+    "latestKnownLines": 67,
+    "newerLinesMissing": 0,
+    "bytes": 1950
+  },
+  {
+    "path": "build\\bench_e2e.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T04:27:50.636Z",
+    "recoveredLines": 72,
+    "latestKnownLines": 72,
+    "newerLinesMissing": 0,
+    "bytes": 2317
+  },
+  {
+    "path": "build\\lama_profile.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T05:03:16.653Z",
+    "recoveredLines": 85,
+    "latestKnownLines": 85,
+    "newerLinesMissing": 0,
+    "bytes": 3114
+  },
+  {
+    "path": "build\\lama_verify.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T05:15:59.351Z",
+    "recoveredLines": 97,
+    "latestKnownLines": 97,
+    "newerLinesMissing": 0,
+    "bytes": 3386
+  },
+  {
+    "path": "build\\ocr_batch_fine.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T05:16:38.821Z",
+    "recoveredLines": 88,
+    "latestKnownLines": 88,
+    "newerLinesMissing": 0,
+    "bytes": 3038
+  },
+  {
+    "path": "build\\ocr_threads.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T05:17:21.807Z",
+    "recoveredLines": 77,
+    "latestKnownLines": 77,
+    "newerLinesMissing": 0,
+    "bytes": 2354
+  },
+  {
+    "path": "build\\ocr_crops_info.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T05:17:42.613Z",
+    "recoveredLines": 84,
+    "latestKnownLines": 84,
+    "newerLinesMissing": 0,
+    "bytes": 2951
+  },
+  {
+    "path": "build\\lama_compare.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T05:20:32.175Z",
+    "recoveredLines": 101,
+    "latestKnownLines": 101,
+    "newerLinesMissing": 0,
+    "bytes": 3327
+  },
+  {
+    "path": "scripts\\optimize_lama.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T06:12:41.085Z",
+    "recoveredLines": 252,
+    "latestKnownLines": 252,
+    "newerLinesMissing": 0,
+    "bytes": 8500
+  },
+  {
+    "path": "build\\ocr_det_limit.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T05:26:25.543Z",
+    "recoveredLines": 73,
+    "latestKnownLines": 73,
+    "newerLinesMissing": 0,
+    "bytes": 2200
+  },
+  {
+    "path": "build\\ocr_pipeline.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T05:27:32.840Z",
+    "recoveredLines": 67,
+    "latestKnownLines": 67,
+    "newerLinesMissing": 0,
+    "bytes": 2029
+  },
+  {
+    "path": "build\\lama_integration.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T05:31:21.899Z",
+    "recoveredLines": 66,
+    "latestKnownLines": 66,
+    "newerLinesMissing": 0,
+    "bytes": 2126
+  },
+  {
+    "path": "data\\repro\\repro_ocr.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T08:55:59.257Z",
+    "recoveredLines": 77,
+    "latestKnownLines": 77,
+    "newerLinesMissing": 0,
+    "bytes": 2346
+  },
+  {
+    "path": "data\\repro\\repro_pipeline.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T08:58:45.741Z",
+    "recoveredLines": 148,
+    "latestKnownLines": 148,
+    "newerLinesMissing": 0,
+    "bytes": 5070
+  },
+  {
+    "path": "data\\repro\\compare_ocr_devices.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-20T08:59:04.964Z",
+    "recoveredLines": 51,
+    "latestKnownLines": 51,
+    "newerLinesMissing": 0,
+    "bytes": 1536
+  },
+  {
+    "path": "scripts\\make_icon.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-17T19:38:55.635Z",
+    "recoveredLines": 61,
+    "latestKnownLines": 61,
+    "newerLinesMissing": 0,
+    "bytes": 1826
+  },
+  {
+    "path": "tests\\test_inpainting_smart.py",
+    "status": "complete",
+    "recoveredVersion": "2026-10-18T06:13:01.107Z",
+    "recoveredLines": 143,
+    "latestKnownLines": 143,
+    "newerLinesMissing": 0,
+    "bytes": 4444
+  },
+  {
+    "path": "build\\_bench_cuda.py",
+    "status": "partial",
+    "recoveredVersion": "2026-10-18T07:25:29.587Z",
+    "recoveredLines": 20,
+    "latestKnownLines": 44,
+    "missingRanges": [
+      [
+        21,
+        44
+      ]
+    ],
+    "bytes": 796
+  }
+]

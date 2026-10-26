@@ -1,0 +1,11 @@
+target-version = "py310"
+line-length = 100
+exclude = ["data", "models", "dist", "build", ".venv*"]
+
+[lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+# FastAPI's File/Form defaults and explicit int() casts are intentional.
+ignore = ["E501", "B008", "RUF001", "RUF046", "SIM115"]
+
+[lint.per-file-ignores]
+"client/desktop.py" = ["SIM105"]

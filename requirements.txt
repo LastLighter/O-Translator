@@ -1,0 +1,33 @@
+# Core runtime
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+python-multipart>=0.0.9
+pydantic>=2.8,<3.0
+pydantic-settings>=2.4,<3.0
+Pillow>=10.4
+numpy>=1.26
+opencv-python-headless>=4.10
+httpx>=0.27,<1.0
+
+# OCR: RapidOCR runs the PP-OCR v4/v5/v6 models as plain ONNX graphs on ONNX
+# Runtime. No PaddlePaddle/PaddleOCR framework packages are needed, and the
+# CUDAExecutionProvider installed for LaMa accelerates OCR as well.
+rapidocr>=3.10,<4.0
+
+# ONNX Runtime for RapidOCR and LaMa. The OpenCV Telea inpainter remains
+# available as a fallback.
+onnxruntime>=1.18
+
+# Optional one-time LaMa graph folding/precision tools (scripts/optimize_lama.py).
+# Not needed at runtime; graph folding cuts cold load from ~30 s to ~2 s.
+# onnxsim>=0.4
+# onnxconverter-common>=1.16  # FP16 conversion
+#
+# Optional ONNX Runtime acceleration variants (install ONE of these instead of
+# the plain onnxruntime above when the hardware matches):
+#   onnxruntime-gpu        # CUDA 12.x + cuDNN 9 (RTX 20-series or newer)
+#   onnxruntime-openvino   # Intel CPU/iGPU via OpenVINO
+#   onnxruntime-directml   # Windows GPU/iGPU via DirectML
+#
+# Optional Tesseract fallback also needs the system binary + pytesseract:
+# pytesseract>=0.3.10

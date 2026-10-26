@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.venv-gpu*/
+gpu_runtime/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+htmlcov/
+
+# Local configuration and secrets
+.env
+.env.local
+
+# Runtime artifacts
+data/
+!data/.gitkeep
+
+# Model weights (download separately; see models/README.md)
+models/lama/*.onnx
+models/lama/*.pt
+models/lama/*.pth
+models/rapidocr/*.onnx
+models/fonts/*.ttf
+models/fonts/*.otf
+models/fonts/*.ttc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Temporary local probes (root only: a bare `_*.py` also matched `__init__.py`)
+/_*.py
+/_*.png
+
+# PyInstaller packaging output
+build/
+dist/
+*.zip

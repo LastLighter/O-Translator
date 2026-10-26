@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c0d10" />
+  <title>O-Translator · 截图翻译工作台</title>
+  <meta name="description" content="O-Translator — OCR, 图像修复, DeepSeek 上下文翻译与自适应排版的一体化截图翻译工具。" />
+  <link rel="icon" href="/static/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/static/styles.css?v=0.1.0" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="O-Translator home">
+        <span class="brand-mark">O<span class="brand-dot"></span></span>
+        <span class="brand-copy">
+          <strong>O-Translator</strong>
+          <small>screenshot translation studio</small>
+        </span>
+      </a>
+      <div class="topbar-meta">
+        <div class="pipeline-strip" aria-label="Translation pipeline">
+          <span>OCR</span><i>→</i><span>INPAINT</span><i>→</i><span>DEEPSEEK</span><i>→</i><span>TYPESET</span>
+        </div>
+        <span id="healthBadge" class="health-badge is-loading">
+          <span class="health-dot"></span><span id="healthText">连接中</span>
+        </span>
+        <a class="ghost-link" href="/api/docs" target="_blank" rel="noreferrer">API</a>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="workspace" aria-label="Image workspace">
+        <div class="workspace-head">
+          <div>
+            <p class="eyebrow">TRANSLATION CANVAS</p>
+            <h1>把截图变成你的语言。</h1>
+          </div>
+          <div class="workspace-tools">
+            <span id="canvasMeta" class="mono-meta">NO IMAGE</span>
+            <button id="resetBtn" class="icon-btn" type="button" title="清空画布" aria-label="清空画布" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="stage" class="stage" tabindex="0">
+          <div id="dropState" class="drop-state">
+            <div class="drop-orbit">
+              <div class="orbit-ring"></div>
+              <div class="drop-icon">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <rect x="5" y="6" width="22" height="18" rx="3"/>
+                  <path d="M5 19l6-6 5 5 4-4 7 7"/>
+                  <circle cx="21.5" cy="11.5" r="2"/>
+                  <path d="M11 28h10"/>
+                </svg>
+              </div>
+            </div>
+            <h2>拖入一张截图，或点击选择</h2>
+            <p>漫画、轻小说插画、游戏对话框、软件界面。<br/>支持 <kbd>Ctrl</kbd> + <kbd>V</kbd> 直接粘贴。</p>
+            <div class="drop-actions">
+              <button id="chooseBtn" class="primary-btn" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0L7 9m5-5l5 5M5 16v3a1 1 0 001 1h12a1 1 0 001-1v-3"/></svg>
+                选择截图
+              </button>
+              <button id="demoBtn" class="secondary-btn" type="button">载入示例</button>
+            </div>
+            <div class="drop-footnote">
+              <span><i class="mini-dot"></i> 本地推理优先</span>
+              <span><i class="mini-dot"></i> 原图不会离开你的服务器</span>
+            </div>
+          </div>
+
+          <div id="previewState" class="preview-state" hidden>
+            <div class="preview-grid">
+              <img id="baseImage" class="preview-image" alt="翻译预览" />
+              <div id="compareLayer" class="compare-layer">
+                <img id="originalImage" class="preview-image" alt="原始截图" />
+              </div>
+              <div id="compareHandle" class="compare-handle" hidden><span></span></div>
+            </div>
+
+            <div class="stage-topline">
+              <div id="viewTabs" class="view-tabs" role="tablist" aria-label="预览模式">
+                <button type="button" class="view-tab is-active" data-view="result">译文</button>
+                <button type="button" class="view-tab" data-view="clean">无字背景</button>
+                <button type="button" class="view-tab" data-view="mask">蒙版</button>
+                <button type="button" class="view-tab" data-view="original">原图</button>
+              </div>
+              <div id="compareControl" class="compare-control" hidden>
+                <span>原图</span>
+                <input id="compareRange" type="range" min="0" max="100" value="50" aria-label="对比滑块" />
+                <span>译文</span>
+              </div>
+            </div>
+
+            <div id="processingState" class="processing-state" hidden>
+              <div class="scan-line"></div>
+              <div class="processing-card">
+                <div class="spinner"><span></span><span></span><span></span></div>
+                <div class="processing-copy">
+                  <p id="processStep">正在读取截图</p>
+                  <span id="processDetail">准备 OCR 引擎…</span>
+                </div>
+                <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+                <span id="progressValue" class="progress-value">0%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="resultBar" class="result-bar" hidden>
+          <div id="engineStats" class="engine-stats"></div>
+          <div class="result-actions">
+            <button id="copyBtn" class="tertiary-btn" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 00-1-1H5a1 1 0 00-1 1v10a1 1 0 001 1h3"/></svg>
+              复制结果 JSON
+            </button>
+            <a id="downloadBtn" class="primary-btn compact" href="#" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 19h14"/></svg>
+              导出 PNG
+            </a>
+          </div>
+        </div>
+
+        <div id="warningsBar" class="warnings-bar" hidden></div>
+
+        <section id="translationsCard" class="translations-card" hidden>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">LINE BY LINE</p>
+              <h2>翻译对照</h2>
+            </div>
+            <span id="lineCount" class="count-pill">0 lines</span>
+          </div>
+          <div id="translationList" class="translation-list"></div>
+        </section>
+      </section>
+
+      <aside class="sidebar" aria-label="Translation settings">
+        <div class="side-card">
+          <div class="side-heading">
+            <span class="step-index">01</span>
+            <div><h2>翻译设置</h2><p>上下文、场景与版面控制</p></div>
+          </div>
+
+          <div class="field-grid">
+            <label class="field">
+              <span>源语言</span>
+              <select id="sourceLang">
+                <option value="auto">自动检测</option>
+                <option value="ja">日本語</option>
+                <option value="en">English</option>
+                <option value="zh">简体中文</option>
+                <option value="ko">한국어</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>目标语言</span>
+              <select id="targetLang">
+                <option value="zh">简体中文</option>
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="field">
+            <span>场景模式</span>
+            <div id="modeGroup" class="segmented" role="radiogroup" aria-label="场景模式">
+              <button type="button" class="is-active" data-mode="auto" role="radio" aria-checked="true">自动</button>
+              <button type="button" data-mode="manga" role="radio" aria-checked="false">漫画</button>
+              <button type="button" data-mode="game" role="radio" aria-checked="false">游戏</button>
+              <button type="button" data-mode="novel" role="radio" aria-checked="false">小说</button>
+              <button type="button" data-mode="ui" role="radio" aria-checked="false">界面</button>
+            </div>
+          </div>
+
+          <label class="field">
+            <span>阅读顺序</span>
+            <select id="readingOrder">
+              <option value="auto">自动判断</option>
+              <option value="ltr">从左到右 · 横向</option>
+              <option value="rtl">从右到左 · 漫画</option>
+            </select>
+          </label>
+
+          <details class="advanced">
+            <summary>高级排版</summary>
+            <div class="advanced-body">
+              <label class="range-field">
+                <span>蒙版膨胀 <output id="dilateValue">7 px</output></span>
+                <input id="dilatePx" type="range" min="3" max="7" step="2" value="7" />
+              </label>
+              <label class="range-field">
+                <span>字号缩放 <output id="fontScaleValue">1.00×</output></span>
+                <input id="fontScale" type="range" min="0.6" max="1.4" step="0.05" value="1" />
+              </label>
+              <label class="check-field">
+                <input id="translateToggle" type="checkbox" checked />
+                <span>调用 DeepSeek 翻译</span>
+              </label>
+            </div>
+          </details>
+
+          <button id="runBtn" class="run-btn" type="button" disabled>
+            <span class="run-btn-label">开始翻译</span>
+            <span class="run-btn-shortcut">Ctrl ↵</span>
+          </button>
+
+          <div id="providerNotice" class="provider-notice" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v5m0 3.5v.5M10.3 4.2L2.8 17a2 2 0 001.7 3h15a2 2 0 001.7-3L13.7 4.2a2 2 0 00-3.4 0z"/></svg>
+            <p id="providerNoticeText"></p>
+          </div>
+        </div>
+
+        <div class="side-card compact-card">
+          <div class="side-heading">
+            <span class="step-index">02</span>
+            <div><h2>处理时间线</h2><p>当前任务实时状态</p></div>
+          </div>
+          <ol id="timeline" class="timeline">
+            <li data-step="ocr"><span></span><div><strong>OCR 文字识别</strong><small>等待截图</small></div></li>
+            <li data-step="inpaint"><span></span><div><strong>背景修复</strong><small>LaMa / OpenCV</small></div></li>
+            <li data-step="translate"><span></span><div><strong>上下文翻译</strong><small>DeepSeek batch</small></div></li>
+            <li data-step="render"><span></span><div><strong>自适应排版</strong><small>字体、颜色、换行</small></div></li>
+          </ol>
+        </div>
+
+        <div class="side-card tip-card">
+          <div class="tip-mark">“</div>
+          <p>一次发送整页文本，DeepSeek 能利用句间上下文，把称呼、语气和专有名词译得更连贯。</p>
+          <span>— CONTEXT-AWARE PROMPTING</span>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <span>O-Translator v0.1 · local-first pipeline</span>
+      <span>PaddleOCR · LaMa · DeepSeek · Pillow</span>
+    </footer>
+  </div>
+
+  <input id="fileInput" type="file" accept="image/png,image/jpeg,image/webp,image/bmp" hidden />
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="/static/app.js?v=0.1.1" defer></script>
+</body>
+</html>
